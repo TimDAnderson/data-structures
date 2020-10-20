@@ -8,13 +8,13 @@ var Queue = function() {
   return newQueue;
 };
 
+//declaring object that will be used to extend instancecs
 var queueMethods = {}; // What can this be attached to Queue object
 
 queueMethods.enqueue = function (value) {
   this.counter++;
   this.storage[this.counter] = value;
 };
-
 
 queueMethods.dequeue = function () {
   if (this.counter > 0) {
